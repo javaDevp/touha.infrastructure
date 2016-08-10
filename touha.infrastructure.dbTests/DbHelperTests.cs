@@ -33,7 +33,7 @@ namespace touha.infrastructure.db.Tests
   FROM KTOES_BS_MUtEXGROUP A, KTOES_BS_ITEM_MUTEX B
  WHERE A.ID = B.MUTEX_CODE AND A.MUTE_TYPE = 2";
             DataTable dt1 = db.Execute(sql1, null);
-            
+
             var sql2 = @"SELECT a.item_id,
        b.item_code,
        b.item_name,
@@ -47,7 +47,7 @@ namespace touha.infrastructure.db.Tests
  WHERE a.item_id = b.id AND a.itemgroup_id = c.id
     and a.request_no = :requestno and a.record_state in ('SQ', 'CG')";
             var parameters = new Dictionary<string, DbParam>();
-            parameters.Add("requestno", new DbParam{Value = 201604261000002});
+            parameters.Add("requestno", new DbParam { Value = 201604261000002 });
             DataTable dt2 = db.Execute(sql2, parameters);
 
             var datas = from r2 in dt2.AsEnumerable()
@@ -76,7 +76,7 @@ namespace touha.infrastructure.db.Tests
                                  select r;
                     Assert.IsTrue(datas2.Count() > 0);
                 }
-                
+
             }
             ////所有与申请单关联的关联组信息
             //var datas = from r2 in dt2.AsEnumerable()
@@ -97,10 +97,20 @@ namespace touha.infrastructure.db.Tests
             //{
             //    Assert.AreEqual(item2["ITEM_CODE"].ToString(), "1117");
             //}
-           // Assert.IsTrue(datas2.Count() > 0);
+            // Assert.IsTrue(datas2.Count() > 0);
 
             Assert.IsTrue(dt1.Rows.Count > 0 && dt2.Rows.Count > 0);
-           // Console.WriteLine
+            // Console.WriteLine
         }
+
+        [TestMethod()]
+        public void ExecuteTest()
+        {
+            var db = new OracleDbHelper();
+            DataTable dt = db.Execute("select * from ktoes_bs_item order by id", null);
+            Assert.IsTrue(dt.Rows[0]["id"].ToString().Equals("1"));
+        }
+
+
     }
 }
