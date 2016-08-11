@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touha.infrastructure.db", "touha.infrastructure.db\touha.infrastructure.db.csproj", "{C9A21BEE-E7B3-4A48-8C15-D916B2AEBFA5}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touha.infrastructure.model", "touha.infrastructure.model\touha.infrastructure.model.csproj", "{B40A3CE8-8EC6-42E1-92B0-59682E3F93CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touha.infrastructure.dbTests", "touha.infrastructure.dbTests\touha.infrastructure.dbTests.csproj", "{4675655D-0077-4101-BF7D-B9506A152C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touha.infrastructure.webapi", "touha.infrastructure.webapi\touha.infrastructure.webapi.csproj", "{023C008A-9137-48F9-ACF9-4EB3D5778234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "touha.infrastructure.mvc", "touha.infrastructure.mvc\touha.infrastructure.mvc.csproj", "{3E44DAFD-80B1-4FFF-8F66-D87B8CFE77BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{4675655D-0077-4101-BF7D-B9506A152C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4675655D-0077-4101-BF7D-B9506A152C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4675655D-0077-4101-BF7D-B9506A152C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023C008A-9137-48F9-ACF9-4EB3D5778234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023C008A-9137-48F9-ACF9-4EB3D5778234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023C008A-9137-48F9-ACF9-4EB3D5778234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023C008A-9137-48F9-ACF9-4EB3D5778234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E44DAFD-80B1-4FFF-8F66-D87B8CFE77BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E44DAFD-80B1-4FFF-8F66-D87B8CFE77BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E44DAFD-80B1-4FFF-8F66-D87B8CFE77BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E44DAFD-80B1-4FFF-8F66-D87B8CFE77BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
